@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="11.0.001">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="11.0.001" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="read_csv" compatibility="11.0.001" expanded="true" height="68" name="Read CSV" width="90" x="45" y="34">
+        <parameter key="csv_file" value="/Users/nathan/Downloads/marketbasket.csv"/>
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="true"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="America/New_York"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="UTF-8"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="Basket ID.false.polynominal.attribute"/>
+          <parameter key="1" value="Hair Conditioner.true.polynominal.attribute"/>
+          <parameter key="2" value="Lemons.true.polynominal.attribute"/>
+          <parameter key="3" value="Standard coffee.true.polynominal.attribute"/>
+          <parameter key="4" value="Frozen Chicken Wings.true.polynominal.attribute"/>
+          <parameter key="5" value="98pct\. Fat Free Hamburger.true.polynominal.attribute"/>
+          <parameter key="6" value="Sugar Cookies.true.polynominal.attribute"/>
+          <parameter key="7" value="Onions.true.polynominal.attribute"/>
+          <parameter key="8" value="Deli Ham.true.polynominal.attribute"/>
+          <parameter key="9" value="Dishwasher Detergent.true.polynominal.attribute"/>
+          <parameter key="10" value="Beets.true.polynominal.attribute"/>
+          <parameter key="11" value="40 Watt Lightbulb.true.polynominal.attribute"/>
+          <parameter key="12" value="Ice Cream.true.polynominal.attribute"/>
+          <parameter key="13" value="Cottage Cheese.true.polynominal.attribute"/>
+          <parameter key="14" value="Plain English Muffins.true.polynominal.attribute"/>
+          <parameter key="15" value="Strawberry Soda.true.polynominal.attribute"/>
+          <parameter key="16" value="Vanilla Ice Cream.true.polynominal.attribute"/>
+          <parameter key="17" value="Potato Chips.true.polynominal.attribute"/>
+          <parameter key="18" value="Strawberry Yogurt.true.polynominal.attribute"/>
+          <parameter key="19" value="Diet Soda.true.polynominal.attribute"/>
+          <parameter key="20" value="D Cell Batteries.true.polynominal.attribute"/>
+          <parameter key="21" value="Paper Towels.true.polynominal.attribute"/>
+          <parameter key="22" value="Mint Chocolate Bar.true.polynominal.attribute"/>
+          <parameter key="23" value="Salsa Dip.true.polynominal.attribute"/>
+          <parameter key="24" value="Buttered Popcorn.true.polynominal.attribute"/>
+          <parameter key="25" value="Cheese Crackers.true.polynominal.attribute"/>
+          <parameter key="26" value="Chocolate Bar.true.polynominal.attribute"/>
+          <parameter key="27" value="Rice Soup.true.polynominal.attribute"/>
+          <parameter key="28" value="Mouthwash.true.polynominal.attribute"/>
+          <parameter key="29" value="Sugar.true.polynominal.attribute"/>
+          <parameter key="30" value="Cheese Flavored Chips.true.polynominal.attribute"/>
+          <parameter key="31" value="Sweat Potatoes.true.polynominal.attribute"/>
+          <parameter key="32" value="Deodorant.true.polynominal.attribute"/>
+          <parameter key="33" value="Waffles.true.polynominal.attribute"/>
+          <parameter key="34" value="Decaf Coffee.true.polynominal.attribute"/>
+          <parameter key="35" value="Smoked Turkey Sliced.true.polynominal.attribute"/>
+          <parameter key="36" value="Screw Driver.true.polynominal.attribute"/>
+          <parameter key="37" value="Sesame Oil.true.polynominal.attribute"/>
+          <parameter key="38" value="Red Wine.true.polynominal.attribute"/>
+          <parameter key="39" value="60 Watt Lightbulb.true.polynominal.attribute"/>
+          <parameter key="40" value="Cream Soda.true.polynominal.attribute"/>
+          <parameter key="41" value="Apple Fruit Roll.true.polynominal.attribute"/>
+          <parameter key="42" value="Noodle Soup.true.polynominal.attribute"/>
+          <parameter key="43" value="Ice Cream Sandwich.true.polynominal.attribute"/>
+          <parameter key="44" value="Soda Crackers.true.polynominal.attribute"/>
+          <parameter key="45" value="Lettuce.true.polynominal.attribute"/>
+          <parameter key="46" value="AA Cell Batteries.true.polynominal.attribute"/>
+          <parameter key="47" value="Honey Roasted Peanuts.true.polynominal.attribute"/>
+          <parameter key="48" value="Frozen Cheese Pizza.true.polynominal.attribute"/>
+          <parameter key="49" value="Tomato Soup.true.polynominal.attribute"/>
+          <parameter key="50" value="Manicotti.true.polynominal.attribute"/>
+          <parameter key="51" value="Toilet Bowl Cleaner.true.polynominal.attribute"/>
+          <parameter key="52" value="Liquid Laundry Detergent.true.polynominal.attribute"/>
+          <parameter key="53" value="Instant Rice.true.polynominal.attribute"/>
+          <parameter key="54" value="Green Pepper.true.polynominal.attribute"/>
+          <parameter key="55" value="Frozen Broccoli.true.polynominal.attribute"/>
+          <parameter key="56" value="Chardonnay Wine.true.polynominal.attribute"/>
+          <parameter key="57" value="Brown Sugar Grits.true.polynominal.attribute"/>
+          <parameter key="58" value="Canned Peas.true.polynominal.attribute"/>
+          <parameter key="59" value="Skin Moisturizer.true.polynominal.attribute"/>
+          <parameter key="60" value="Avocado Dip.true.polynominal.attribute"/>
+          <parameter key="61" value="Blueberry Muffins.true.polynominal.attribute"/>
+          <parameter key="62" value="Apple Cinnamon Waffles.true.polynominal.attribute"/>
+          <parameter key="63" value="Chablis Wine.true.polynominal.attribute"/>
+          <parameter key="64" value="Cantaloupe.true.polynominal.attribute"/>
+          <parameter key="65" value="Shrimp Cocktail Sauce.true.polynominal.attribute"/>
+          <parameter key="66" value="100 Watt Lightbulb.true.polynominal.attribute"/>
+          <parameter key="67" value="Whole Green Beans.true.polynominal.attribute"/>
+          <parameter key="68" value="Turkey TV Dinner.true.polynominal.attribute"/>
+          <parameter key="69" value="Wash Towels.true.polynominal.attribute"/>
+          <parameter key="70" value="Dog Food.true.polynominal.attribute"/>
+          <parameter key="71" value="Cat Food.true.polynominal.attribute"/>
+          <parameter key="72" value="Frozen Sausage Pizza.true.polynominal.attribute"/>
+          <parameter key="73" value="Frosted Donuts.true.polynominal.attribute"/>
+          <parameter key="74" value="Shrimp.true.polynominal.attribute"/>
+          <parameter key="75" value="Summer Sausage.true.polynominal.attribute"/>
+          <parameter key="76" value="Plums.true.polynominal.attribute"/>
+          <parameter key="77" value="Mild Cheddar Cheese.true.polynominal.attribute"/>
+          <parameter key="78" value="Cream of Wheat.true.polynominal.attribute"/>
+          <parameter key="79" value="Fresh Lima Beans.true.polynominal.attribute"/>
+          <parameter key="80" value="Flavored Fruit Bars.true.polynominal.attribute"/>
+          <parameter key="81" value="Mushrooms.true.polynominal.attribute"/>
+          <parameter key="82" value="Flour.true.polynominal.attribute"/>
+          <parameter key="83" value="Plain Rye Bread.true.polynominal.attribute"/>
+          <parameter key="84" value="Jelly Filled Donuts.true.polynominal.attribute"/>
+          <parameter key="85" value="Apple Sauce.true.polynominal.attribute"/>
+          <parameter key="86" value="Hot Chicken Wings.true.polynominal.attribute"/>
+          <parameter key="87" value="Orange Juice.true.polynominal.attribute"/>
+          <parameter key="88" value="Strawberry Jam.true.polynominal.attribute"/>
+          <parameter key="89" value="Chocolate Chip Cookies.true.polynominal.attribute"/>
+          <parameter key="90" value="Vegetable Soup.true.polynominal.attribute"/>
+          <parameter key="91" value="Oats and Nuts Cereal.true.polynominal.attribute"/>
+          <parameter key="92" value="Fruit Roll.true.polynominal.attribute"/>
+          <parameter key="93" value="Corn Oil.true.polynominal.attribute"/>
+          <parameter key="94" value="Corn Flake Cereal.true.polynominal.attribute"/>
+          <parameter key="95" value="75 Watt Lightbulb.true.polynominal.attribute"/>
+          <parameter key="96" value="Mushroom Pizza - Frozen.true.polynominal.attribute"/>
+          <parameter key="97" value="Sour Cream.true.polynominal.attribute"/>
+          <parameter key="98" value="Deli Salad.true.polynominal.attribute"/>
+          <parameter key="99" value="Deli Turkey.true.polynominal.attribute"/>
+          <parameter key="100" value="Glass Cleaner.true.polynominal.attribute"/>
+          <parameter key="101" value="Brown Sugar.true.polynominal.attribute"/>
+          <parameter key="102" value="English Muffins.true.polynominal.attribute"/>
+          <parameter key="103" value="Apple Soda.true.polynominal.attribute"/>
+          <parameter key="104" value="Strawberry Preserves.true.polynominal.attribute"/>
+          <parameter key="105" value="Pepperoni Pizza - Frozen.true.polynominal.attribute"/>
+          <parameter key="106" value="Plain Oatmeal.true.polynominal.attribute"/>
+          <parameter key="107" value="Beef Soup.true.polynominal.attribute"/>
+          <parameter key="108" value="Trash Bags.true.polynominal.attribute"/>
+          <parameter key="109" value="Corn Chips.true.polynominal.attribute"/>
+          <parameter key="110" value="Tangerines.true.polynominal.attribute"/>
+          <parameter key="111" value="Hot Dogs.true.polynominal.attribute"/>
+          <parameter key="112" value="Can Opener.true.polynominal.attribute"/>
+          <parameter key="113" value="Dried Apples.true.polynominal.attribute"/>
+          <parameter key="114" value="Grape Juice.true.polynominal.attribute"/>
+          <parameter key="115" value="Carrots.true.polynominal.attribute"/>
+          <parameter key="116" value="Frozen Shrimp.true.polynominal.attribute"/>
+          <parameter key="117" value="Grape Fruit Roll.true.polynominal.attribute"/>
+          <parameter key="118" value="Merlot Wine.true.polynominal.attribute"/>
+          <parameter key="119" value="Raisins.true.polynominal.attribute"/>
+          <parameter key="120" value="Cranberry Juice.true.polynominal.attribute"/>
+          <parameter key="121" value="Shampoo.true.polynominal.attribute"/>
+          <parameter key="122" value="Pancake Mix.true.polynominal.attribute"/>
+          <parameter key="123" value="Paper Plates.true.polynominal.attribute"/>
+          <parameter key="124" value="Bologna.true.polynominal.attribute"/>
+          <parameter key="125" value="2pct\. Milk.true.polynominal.attribute"/>
+          <parameter key="126" value="Daily Newspaper.true.polynominal.attribute"/>
+          <parameter key="127" value="Popcorn Salt.true.polynominal.attribute"/>
+          <parameter key="128" value="Frozen Cauliflower.true.polynominal.attribute"/>
+          <parameter key="129" value="Vanilla Wafers.true.polynominal.attribute"/>
+          <parameter key="130" value="Tomatoes.true.polynominal.attribute"/>
+          <parameter key="131" value="Vegetable Oil.true.polynominal.attribute"/>
+          <parameter key="132" value="Chicken Soup.true.polynominal.attribute"/>
+          <parameter key="133" value="Eggs.true.polynominal.attribute"/>
+          <parameter key="134" value="Canned Mixed Fruit.true.polynominal.attribute"/>
+          <parameter key="135" value="Raisin Pudding.true.polynominal.attribute"/>
+          <parameter key="136" value="Celery.true.polynominal.attribute"/>
+          <parameter key="137" value="Oatmeal.true.polynominal.attribute"/>
+          <parameter key="138" value="Hot Chocolate.true.polynominal.attribute"/>
+          <parameter key="139" value="Spaghetti.true.polynominal.attribute"/>
+          <parameter key="140" value="Napkins.true.polynominal.attribute"/>
+          <parameter key="141" value="Blueberry Waffles.true.polynominal.attribute"/>
+          <parameter key="142" value="White Bread.true.polynominal.attribute"/>
+          <parameter key="143" value="Grape Jelly.true.polynominal.attribute"/>
+          <parameter key="144" value="Cheese Spread.true.polynominal.attribute"/>
+          <parameter key="145" value="Steak TV Dinner.true.polynominal.attribute"/>
+          <parameter key="146" value="Fudge Cookies.true.polynominal.attribute"/>
+          <parameter key="147" value="Chicken Breast - Frozen.true.polynominal.attribute"/>
+          <parameter key="148" value="Diet Cola.true.polynominal.attribute"/>
+          <parameter key="149" value="Limes.true.polynominal.attribute"/>
+          <parameter key="150" value="Sharp Cheddar Cheese.true.polynominal.attribute"/>
+          <parameter key="151" value="Cabbage.true.polynominal.attribute"/>
+          <parameter key="152" value="Nasal Spray.true.polynominal.attribute"/>
+          <parameter key="153" value="Dried Apricots.true.polynominal.attribute"/>
+          <parameter key="154" value="Cola.true.polynominal.attribute"/>
+          <parameter key="155" value="Plastic Knives.true.polynominal.attribute"/>
+          <parameter key="156" value="Liquid Soap.true.polynominal.attribute"/>
+          <parameter key="157" value="Toothbrush.true.polynominal.attribute"/>
+          <parameter key="158" value="Cranberry Muffins.true.polynominal.attribute"/>
+          <parameter key="159" value="Apples.true.polynominal.attribute"/>
+          <parameter key="160" value="Regular Hamburger.true.polynominal.attribute"/>
+          <parameter key="161" value="Chardonnay.true.polynominal.attribute"/>
+          <parameter key="162" value="Sunglasses.true.polynominal.attribute"/>
+          <parameter key="163" value="Turkey Noodle Soup.true.polynominal.attribute"/>
+          <parameter key="164" value="Frozen Carrots.true.polynominal.attribute"/>
+          <parameter key="165" value="Bananas.true.polynominal.attribute"/>
+          <parameter key="166" value="Sandwich Bags.true.polynominal.attribute"/>
+          <parameter key="167" value="C Cell Batteries.true.polynominal.attribute"/>
+          <parameter key="168" value="Import Beer.true.polynominal.attribute"/>
+          <parameter key="169" value="Hot Dog Buns.true.polynominal.attribute"/>
+          <parameter key="170" value="Pepper.true.polynominal.attribute"/>
+          <parameter key="171" value="Plain Bagels.true.polynominal.attribute"/>
+          <parameter key="172" value="Window Cleaner.true.polynominal.attribute"/>
+          <parameter key="173" value="Oranges.true.polynominal.attribute"/>
+          <parameter key="174" value="Microwave Popcorn.true.polynominal.attribute"/>
+          <parameter key="175" value="Toothpaste.true.polynominal.attribute"/>
+          <parameter key="176" value="Blueberry Bagels.true.polynominal.attribute"/>
+          <parameter key="177" value="Apple Jam.true.polynominal.attribute"/>
+          <parameter key="178" value="Whole Corn.true.polynominal.attribute"/>
+          <parameter key="179" value="Fruit Drink.true.polynominal.attribute"/>
+          <parameter key="180" value="Cauliflower.true.polynominal.attribute"/>
+          <parameter key="181" value="French Roast Coffee.true.polynominal.attribute"/>
+          <parameter key="182" value="Buttermilk.true.polynominal.attribute"/>
+          <parameter key="183" value="Beef Hot Dogs.true.polynominal.attribute"/>
+          <parameter key="184" value="Black-eyed Peas.true.polynominal.attribute"/>
+          <parameter key="185" value="Ground Beef.true.polynominal.attribute"/>
+          <parameter key="186" value="Peanut Butter Cookies.true.polynominal.attribute"/>
+          <parameter key="187" value="Strawberry Drink.true.polynominal.attribute"/>
+          <parameter key="188" value="Cinnamon Oatmeal.true.polynominal.attribute"/>
+          <parameter key="189" value="Pastry Snacks.true.polynominal.attribute"/>
+          <parameter key="190" value="Grape Jam.true.polynominal.attribute"/>
+          <parameter key="191" value="Mandarin Oranges.true.polynominal.attribute"/>
+          <parameter key="192" value="Mango Drink.true.polynominal.attribute"/>
+          <parameter key="193" value="Taco Salad.true.polynominal.attribute"/>
+          <parameter key="194" value="Pretzels.true.polynominal.attribute"/>
+          <parameter key="195" value="Plain Blueberry Muffins.true.polynominal.attribute"/>
+          <parameter key="196" value="Canned Tuna.true.polynominal.attribute"/>
+          <parameter key="197" value="Licorice.true.polynominal.attribute"/>
+          <parameter key="198" value="Garlic Bread.true.polynominal.attribute"/>
+          <parameter key="199" value="Roasted Chicken.true.polynominal.attribute"/>
+          <parameter key="200" value="Frozen Peas.true.polynominal.attribute"/>
+          <parameter key="201" value="Hamburger Buns.true.polynominal.attribute"/>
+          <parameter key="202" value="Multi-Grain Wheat Bread.true.polynominal.attribute"/>
+          <parameter key="203" value="Tissue.true.polynominal.attribute"/>
+          <parameter key="204" value="Rye Bread.true.polynominal.attribute"/>
+          <parameter key="205" value="Peach Shampoo.true.polynominal.attribute"/>
+          <parameter key="206" value="French Fries.true.polynominal.attribute"/>
+          <parameter key="207" value="Raspberry Fruit Roll.true.polynominal.attribute"/>
+          <parameter key="208" value="Sesame Crackers.true.polynominal.attribute"/>
+          <parameter key="209" value="Heavy Duty Cleaner.true.polynominal.attribute"/>
+          <parameter key="210" value="Ramen Noodles.true.polynominal.attribute"/>
+          <parameter key="211" value="Soft Tissue.true.polynominal.attribute"/>
+          <parameter key="212" value="Orange Flavored Fruit Bars.true.polynominal.attribute"/>
+          <parameter key="213" value="Cheese.true.polynominal.attribute"/>
+          <parameter key="214" value="Flathead Screwdriver.true.polynominal.attribute"/>
+          <parameter key="215" value="Polish Sausage.true.polynominal.attribute"/>
+          <parameter key="216" value="Apple Drink.true.polynominal.attribute"/>
+          <parameter key="217" value="Domestic Beer.true.polynominal.attribute"/>
+          <parameter key="218" value="Mixed Nuts.true.polynominal.attribute"/>
+          <parameter key="219" value="Chicken TV Dinner.true.polynominal.attribute"/>
+          <parameter key="220" value="Tissues.true.polynominal.attribute"/>
+          <parameter key="221" value="Garlic.true.polynominal.attribute"/>
+          <parameter key="222" value="Dried Fruit Mix.true.polynominal.attribute"/>
+          <parameter key="223" value="Cole Slaw.true.polynominal.attribute"/>
+          <parameter key="224" value="Donuts.true.polynominal.attribute"/>
+          <parameter key="225" value="Sliced Turkey.true.polynominal.attribute"/>
+          <parameter key="226" value="Sliced Chicken.true.polynominal.attribute"/>
+          <parameter key="227" value="Broccoli.true.polynominal.attribute"/>
+          <parameter key="228" value="Ranch Dip.true.polynominal.attribute"/>
+          <parameter key="229" value="Sponge.true.polynominal.attribute"/>
+          <parameter key="230" value="Frozen Corn.true.polynominal.attribute"/>
+          <parameter key="231" value="Paper Cups.true.polynominal.attribute"/>
+          <parameter key="232" value="Wheat Bread.true.polynominal.attribute"/>
+          <parameter key="233" value="Oven Cleaner.true.polynominal.attribute"/>
+          <parameter key="234" value="Tomato Sauce.true.polynominal.attribute"/>
+          <parameter key="235" value="Plastic Forks.true.polynominal.attribute"/>
+          <parameter key="236" value="Popcorn.true.polynominal.attribute"/>
+          <parameter key="237" value="Creamy Peanut Butter.true.polynominal.attribute"/>
+          <parameter key="238" value="Sweet Relish.true.polynominal.attribute"/>
+          <parameter key="239" value="Plain Muffins.true.polynominal.attribute"/>
+          <parameter key="240" value="Cheese Dip.true.polynominal.attribute"/>
+          <parameter key="241" value="Colby Cheese.true.polynominal.attribute"/>
+          <parameter key="242" value="Chicken Noodle Soup.true.polynominal.attribute"/>
+          <parameter key="243" value="Fingernail Clippers.true.polynominal.attribute"/>
+          <parameter key="244" value="Corned Beef.true.polynominal.attribute"/>
+          <parameter key="245" value="Lollipops.true.polynominal.attribute"/>
+          <parameter key="246" value="Plain White Bread.true.polynominal.attribute"/>
+          <parameter key="247" value="Blueberry Yogurt.true.polynominal.attribute"/>
+          <parameter key="248" value="Frozen Chicken Thighs.true.polynominal.attribute"/>
+          <parameter key="249" value="Mixed Vegetables.true.polynominal.attribute"/>
+          <parameter key="250" value="Souring Pads.true.polynominal.attribute"/>
+          <parameter key="251" value="Tuna Spread.true.polynominal.attribute"/>
+          <parameter key="252" value="Toilet Paper.true.polynominal.attribute"/>
+          <parameter key="253" value="White Wine.true.polynominal.attribute"/>
+          <parameter key="254" value="Columbian Coffee.true.polynominal.attribute"/>
+          <parameter key="255" value="Ravioli.true.polynominal.attribute"/>
+          <parameter key="256" value="White Zinfandel Wine.true.polynominal.attribute"/>
+          <parameter key="257" value="Matches.true.polynominal.attribute"/>
+          <parameter key="258" value="Strawberry Fruit Roll.true.polynominal.attribute"/>
+          <parameter key="259" value="Red Pepper.true.polynominal.attribute"/>
+          <parameter key="260" value="Whole Milk.true.polynominal.attribute"/>
+          <parameter key="261" value="Canned Beets.true.polynominal.attribute"/>
+          <parameter key="262" value="Graham Crackers.true.polynominal.attribute"/>
+          <parameter key="263" value="Scissors.true.polynominal.attribute"/>
+          <parameter key="264" value="Grape Flavored Fruit Bars.true.polynominal.attribute"/>
+          <parameter key="265" value="Muffins.true.polynominal.attribute"/>
+          <parameter key="266" value="Peas.true.polynominal.attribute"/>
+          <parameter key="267" value="Counter Cleaner.true.polynominal.attribute"/>
+          <parameter key="268" value="Creamed Corn.true.polynominal.attribute"/>
+          <parameter key="269" value="Baked Beans.true.polynominal.attribute"/>
+          <parameter key="270" value="Cream Cheese.true.polynominal.attribute"/>
+          <parameter key="271" value="Bubble Gum.true.polynominal.attribute"/>
+          <parameter key="272" value="Hair Brush.true.polynominal.attribute"/>
+          <parameter key="273" value="Grapefruit Juice.true.polynominal.attribute"/>
+          <parameter key="274" value="Chicken Legs.true.polynominal.attribute"/>
+          <parameter key="275" value="Regular Coffee.true.polynominal.attribute"/>
+          <parameter key="276" value="Apple Juice.true.polynominal.attribute"/>
+          <parameter key="277" value="Provolone Cheese.true.polynominal.attribute"/>
+          <parameter key="278" value="Canned Peaches.true.polynominal.attribute"/>
+          <parameter key="279" value="Plastic Spoons.true.polynominal.attribute"/>
+          <parameter key="280" value="Brown Sugar Oatmeal.true.polynominal.attribute"/>
+          <parameter key="281" value="Oven Mitt.true.polynominal.attribute"/>
+          <parameter key="282" value="BBQ Potato Chips.true.polynominal.attribute"/>
+          <parameter key="283" value="Cookies.true.polynominal.attribute"/>
+          <parameter key="284" value="Dandruff Shampoo.true.polynominal.attribute"/>
+          <parameter key="285" value="Aspirin.true.polynominal.attribute"/>
+          <parameter key="286" value="Sweet Potatoes.true.polynominal.attribute"/>
+          <parameter key="287" value="Canned Tomatoes.true.polynominal.attribute"/>
+          <parameter key="288" value="Chunky Peanut Butter.true.polynominal.attribute"/>
+          <parameter key="289" value="Wood Polish.true.polynominal.attribute"/>
+          <parameter key="290" value="Squash.true.polynominal.attribute"/>
+          <parameter key="291" value="Strawberry Waffles.true.polynominal.attribute"/>
+          <parameter key="292" value="Pancakes.true.polynominal.attribute"/>
+          <parameter key="293" value="Salt.true.polynominal.attribute"/>
+          <parameter key="294" value="Green Beans.true.polynominal.attribute"/>
+          <parameter key="295" value="Flavored Ice.true.polynominal.attribute"/>
+          <parameter key="296" value="Imported Beer.true.polynominal.attribute"/>
+          <parameter key="297" value="Grits.true.polynominal.attribute"/>
+          <parameter key="298" value="Apple Jelly.true.polynominal.attribute"/>
+          <parameter key="299" value="Beef Jerky.true.polynominal.attribute"/>
+          <parameter key="300" value="Potatoes.true.polynominal.attribute"/>
+          <parameter key="301" value="Small Eggs.true.polynominal.attribute"/>
+          <parameter key="302" value="Silver Cleaner.true.polynominal.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="false"/>
+      </operator>
+      <operator activated="true" class="nominal_to_binominal" compatibility="11.0.001" expanded="true" height="103" name="Nominal to Binominal" width="90" x="246" y="34">
+        <parameter key="return_preprocessing_model" value="false"/>
+        <parameter key="attribute_filter_type" value="all"/>
+        <parameter key="attribute" value=""/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="transform_binominal" value="false"/>
+        <parameter key="use_underscore_in_name" value="false"/>
+      </operator>
+      <operator activated="true" class="concurrency:fp_growth" compatibility="11.0.001" expanded="true" height="82" name="FP-Growth" width="90" x="447" y="34">
+        <parameter key="input_format" value="items in dummy coded columns"/>
+        <parameter key="item_separators" value="|"/>
+        <parameter key="use_quotes" value="false"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="trim_item_names" value="true"/>
+        <parameter key="min_requirement" value="support"/>
+        <parameter key="min_support" value="0.2"/>
+        <parameter key="min_frequency" value="100"/>
+        <parameter key="min_items_per_itemset" value="1"/>
+        <parameter key="max_items_per_itemset" value="0"/>
+        <parameter key="max_number_of_itemsets" value="1000000"/>
+        <parameter key="find_min_number_of_itemsets" value="true"/>
+        <parameter key="min_number_of_itemsets" value="100"/>
+        <parameter key="max_number_of_retries" value="100"/>
+        <parameter key="requirement_decrease_factor" value="0.9"/>
+        <enumeration key="must_contain_list"/>
+      </operator>
+      <connect from_op="Read CSV" from_port="output" to_op="Nominal to Binominal" to_port="example set input"/>
+      <connect from_op="Nominal to Binominal" from_port="example set output" to_op="FP-Growth" to_port="example set"/>
+      <connect from_op="FP-Growth" from_port="example set" to_port="result 1"/>
+      <connect from_op="FP-Growth" from_port="frequent sets" to_port="result 2"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+      <portSpacing port="sink_result 3" spacing="0"/>
+    </process>
+  </operator>
+</process>
